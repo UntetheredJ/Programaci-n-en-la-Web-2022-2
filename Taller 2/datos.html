@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+   
+  <head>
+    <title>Datos usuario</title>
+  </head>
+
+  <body>
+
+    <h1>Rellena tu CV</h1>
+    
+    <form  enctype="multipart/form-data">
+        <div>
+            <label>Nombre</label>
+        </div>
+        <div>
+            <input/>
+        </div> 
+
+        <div>
+            <label>Apellidos</label>
+        </div>
+        <div>
+            <input>
+        </div>
+
+        <div>
+            <label>Contraseña</label>
+        </div>
+        <div>
+            <input/>
+        </div> 
+
+        <div>
+            <label>Confirme Contraseña</label>
+        </div>
+        <div>
+            <input/>
+        </div> 
+
+        <div>
+            <label>Identificación</label>
+        </div>
+        <div>
+            <select name="documentos">
+                <option>T.I</option>
+                <option>C.C</option>
+                <option>C.E</option>
+              </select>
+            <input/>
+        </div>
+        <div>
+            <label>Sexo</label>
+        </div>
+        <div>
+            <label for="Masculino"><input id="Masculino" name="Sexo" type="radio"> Masculino</label>
+            <label for="Femenino"><input id="Femenino" name="Sexo" type="radio"> Femenino</label>
+        </div> 
+
+        <br>
+        <div>
+            <label>Incluir mi foto</label>
+        </div>
+        <div>
+            <input type="file" name="adjunto" accept=".jpg,.png"/>
+        </div>
+
+        <br>
+
+        <div>
+            <label><input type="checkbox" name="casillas de personalidad">Estudiante</label>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset style="width:500px">
+                <legend>Datos personales</legend>
+                <label for="departamento">Departamento</label>
+                <select class="form-control"name="departamento" required>
+                    <option value = "">-selecciona-</option>
+                    <option value = "Amazonas">Amazonas</option>
+                    <option value = "Antioquia">Antioquia</option>
+                    <option value = "Arauca">Arauca</option>
+                    <option value = "Atlántico">Atlántico</option>
+                    <option value = "Bolívar">Bolívar</option>
+                    <option value = "Boyacá">Boyacá</option>
+                    <option value = "Caldas">Caldas</option>
+                    <option value = "Caquetá">Caquetá</option>
+                    <option value = "Casanare">Casanare</option>
+                    <option value = "Cauca">Cauca</option>
+                    <option value = "Cesar">Cesar</option>
+                    <option value = "Chocó">Chocó</option>		            
+                    <option value = "Córdoba">Córdoba</option>
+                    <option value = "Cundinamarca">Cundinamarca</option>
+                    <option value = "Guainía">Guainía</option>
+                    <option value = "Guaviare">Guaviare</option>
+                    <option value = "Huila">Huila</option>
+                    <option value = "La Guajira">La Guajira</option>
+                    <option value = "Magdalena">Magdalena</option>
+                    <option value = "Meta">Meta</option>
+                    <option value = "Nariño">Nariño</option>
+                    <option value = "Norte de Santander">Norte de Santander</option>
+                    <option value = "Putumayo">Putumayo</option>                
+                    <option value = "Quindío">Quindío</option>  
+                    <option value = "Risaralda">Risaralda</option>
+                    <option value = "San Andrés y Providencia">San Andrés y Providencia</option>
+                    <option value = "Santander">Santander</option>
+                    <option value = "Sucre">Sucre</option>
+                    <option value = "Tolima">Tolima</option>
+                    <option value = "Valle del Cauca">Valle del Cauca</option>
+                    <option value = "Vaupés">Vaupés</option>
+                    <option value = "Vichada">Vichada</option>
+                </select>
+                <br>
+                <br>
+                <div>
+                    <label>Fecha de nacimiento</label>
+                </div>
+                <div>
+                    <input/>
+                    <label> de </label>
+                    <select name="mes" required>
+                        <option>Enero</option>
+                        <option>Febrero</option>
+                        <option>Marzo</option>
+                        <option>Abril</option>
+                        <option>Mayo</option>
+                        <option>Junio</option>
+                        <option>Julio</option>
+                        <option>Agosto</option>
+                        <option>Septiembre</option>
+                        <option>Octubre</option>
+                        <option>Noviembre</option>
+                        <option>Diciembre</option>
+                    </select>
+                    <label> de </label>
+                    <input>
+                </div> 
+
+                <div><label>Temas de interés</label></div>
+                <div>
+                    <select size="5">
+                        <option>Administracion de BD</option>
+                        <option>Inteligencia artificial</option>
+                        <option>Ciencia de datos</option>
+                        <option>Hardware</option>
+                        <option>Supercomputación</option>
+                        <option>Procesamiento de imagenes</option>
+                        <option>Desarrollo web</option>
+                    </select>
+                </div>
+
+
+
+              </fieldset>
+        </div>
+        <br>
+
+        
+
+        <input type="button" value="Guardar cambios" onclick="history.back()">
+        <button>Borrar los datos introducidos</button>
+    </form>
+    
+  </body>
+
+</html>   
