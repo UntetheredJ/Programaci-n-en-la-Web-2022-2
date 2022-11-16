@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registro de Autos</title>
-    <meta charset="UTF-8"/>
-	<link rel="stylesheet" href="cars.css">
+	<title class="title">Registro de Autos</title>
+	<link rel="stylesheet" href="carrcss.css">
 </head>
-<body class="body">
+<body>
     <div class="box">
-        <form>
-            <span class="text-center">Registro Auto</span>
-            <div class="input-container">
+        <form class="form">
+            <div class="title">
+                <h1>Registro de Autos</h1>
+            </div>
+            <div class="section">
                 <select name="Coche">
                     <option hidden disabled selected value>ID coche</option>
                     <option>1</option>
@@ -70,27 +71,28 @@
                     <option>5</option>
                 </select>		
             </div>
-            <div class="input-container">
+            <div class="section">
                 <label>Modelo</label>
                 <input type="text" required=""/>   		
             </div>	
-            <div class="input-container">
+            <div class="section">
                 <label>Año</label>	
                 <input type="text" required=""/>  	
             </div>
-            <div class="input-container">
-                <textarea placeholder="Detalles"></textarea>
+            <div class="section">
+                <p><label>Detalles</label></p>
+                <textarea id="detalles" name="detalles" rows="5" cols="33"></textarea>
                 	
             </div>
-        <div class="input-container">
+        <div class="section">
             <label>Caja</label>
             <input type="number" required="" min="0"/>
         </div>
-        <div class="input-container">
+        <div class="section">
             <label>Motor</label>
             <input type="number" required="" min="0"/>     		
         </div>
-        <div class="input-container">
+        <div class="section">
             <label>Precio</label>
             <input type="text" required=""/> 
             <select id="moneda">
@@ -101,14 +103,14 @@
                 <option>Libras</option>
             </select>    		
         </div>
-        <div class="input-container">
-            <div class="input">
+        <div class="section">
                 <label>Fecha de publicación</label>
                 <input type="date">
-            </div> 
+
         </div>
-        
-        <button type="button" class="btn">Enviar</button>
+        <div class="button">
+            <button type="button">Enviar</button>
+        </div>
     </form>	
     </div>
 </body>
