@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap')
+html{
+    height: 50%
+}
+
+body{
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    font-family: 'Montserrat', sans-serif;
+}
+.box{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 600px;
+    left: 50%;
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+.title{
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.section{
+    position: relative;
+}
+
+.section input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.section label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    opacity: 0.4;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.section input:focus ~ label, .section input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #58A0E7;
+    opacity: 1;
+    font-size: 12px;
+}
+
+
+.section select{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 16px;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.section select:focus{
+    background: rgba(0, 0, 0, .5);
+}
+
+.section select option{
+    opacity: 0.4;
+}
+
+.button button{
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.6);
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 32px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.button button:hover{
+    opacity: 1;
+    font-size: 20px;
+    transition: 0.2s all;
+}
+
+.button button:active{
+    font-size: 18px;
+    transition: 0.1s all;
+}
