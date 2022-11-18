@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Registro de Auto</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"
+            id="bootstrap-css">
+        <link rel="stylesheet" href="carbootstrap.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="form-holder">
+                <div class="form-content">
+            <div class="row">
+                <div class="col">
+                    <h2>Registro de Auto</h2>
+                </div>
+
+                <div class="form">
+                    <div class="row mb-4">
+                        <label for="idCoche">ID Coche</label>
+                        <input type="number" class="form-control" id="idCoche" placeholder="Ingrese su ID de coche">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="tipoCoche">Tipo Coche</label>
+                        <select class="form-control form-control-sm" id="tipoCoche">
+                            <option hidden disabled selected value>Seleccione el tipo de coche</option>
+                            <option>Sedán</option>
+                            <option>Hatchback</option>
+                            <option>SUV</option>
+                            <option>Deportivo</option>
+                            <option>Comercial</option>
+                            <option>Van</option>
+                            <option>Pick Up</option>
+                            <option>Camión</option>
+                        </select>
+                    </div>
+                    <div class="row mb-4">
+                        <label for="estado">Estado</label>
+                        <select class="form-control form-control-sm" id="estado">
+                            <option hidden disabled selected value>Seleccione el estado</option>
+                            <option>Nuevo</option>
+                            <option>Usado</option>
+                        </select>     
+                    </div>
+                    <div class="row mb-4">
+                        <label for="marca">Marca</label>
+                        <select class="form-control form-control-sm" id="marca">
+                            <option hidden disabled selected value>Seleccione la marca</option>
+                            <option>Alfa Romeo</option>
+                            <option>Audi</option>
+                            <option>BMW</option>
+                            <option>Citroen</option>
+                            <option>Fiat</option>
+                            <option>Honda</option>
+                            <option>Mercedes Benz</option>
+                            <option>Opel</option>
+                            <option>Renault</option>
+                            <option>Seat</option>
+                            <option>Toyota</option>
+                            <option>Volkswagen</option>
+                            <option>Volvo</option>
+                            <option>Hyundai</option>
+                            <option>Peugeot</option>
+                            <option>Ford</option>
+                        </select>     
+                    </div>
+                    <div class="row mb-4">
+                        <label for="combustible">Combustible</label>
+                        <select class="form-control form-control-sm" id="combustible">
+                            <option hidden disabled selected value>Seleccione el tipo de combustible</option>
+                            <option>Gasolina</option>
+                            <option>Diésel</option>
+                            <option>Biodiesel</option>
+                            <option>Electricidad</option>
+                            <option>Gas natural</option>
+                        </select>     
+                    </div>
+                    <div class="row mb-4">
+                        <label for="idUsuario">ID Usuario</label>
+                        <input type="number" class="form-control" id="idUsuario" placeholder="Ingrese su ID de usuario">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="modelo">Modelo</label>
+                        <input type="text" class="form-control" id="modelo" placeholder="Ingrese el modelo de su auto">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="año">Año</label>
+                        <input type="number" class="form-control" id="año" placeholder="Ingrese el año de su auto">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="detalles">Detalles</label>
+                        <input type="text" class="form-control" id="detalles" placeholder="Ingrese detalles de su auto">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="caja">Caja</label>
+                        <input type="number" class="form-control" id="caja" placeholder="Ingrese la caja de su auto">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="motor">Motor</label>
+                        <input type="number" class="form-control" id="motor" placeholder="Ingrese el motor de su auto">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="precio">Precio</label>
+                        <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio de su auto">
+                    </div>
+                    <div class="row mb-4">
+                        <label for="moneda">Moneda</label>
+                        <select class="form-control form-control-sm" id="moneda">
+                            <option hidden disabled selected value>Seleccione su moneda</option>
+                            <option>Dolares</option>
+                            <option>Euros</option>
+                            <option>Pesos</option>
+                            <option>Libras</option>
+                        </select>     
+                    </div>
+                    <div class="row mb-4">
+                        <label>Fecha de publicación</label> 
+                        <input type="date">
+                    </div>
+                    <div class="button">
+                        <button type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
