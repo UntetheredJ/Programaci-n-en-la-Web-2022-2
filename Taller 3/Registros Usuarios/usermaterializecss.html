@@ -3,35 +3,44 @@
 
     <head>
         <title>Registro de Usuario</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="userbootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="usermaterializecss.css">
     </head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 py-5 bg-primary text-white text-center">
-                    <div class="fondo">
-                        <div class="card-body">
-                            <img src="https://learn.microsoft.com/training/achievements/register-and-manage-customer-devices-with-connected-field-service-social.png"
-                                style="width:40%">
-                            <h2>Registro de Usuario</h2>
+        <div class="fondo">
+            <div class="container col s8">
+                <div class="row">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <a class="brand-logo center">Registro de Usuario</a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                <li><a href="sass.html">Sass</a></li>
+                                <li><a href="badges.html">Components</a></li>
+                                <li><a href="collapsible.html">JavaScript</a></li>
+                            </ul>
                         </div>
-                    </div>
+                    </nav>
                 </div>
     
-                <div class="col-md-8 py-5 border">
-                    <h4 class="pb-4">Ingrese los siguientes datos para iniciar su registro.</h4>
+                <div class="desc">
+                    <p class="center-align">Ingrese los siguientes datos para realizar su registro.</p>
+                </div>
+
+                <form class="col s14">
                     <div class="row">
-                        <div class="col">
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">perm_identity</i>
+                            <input type="number" id="idUsuario" class="validate">
                             <label for="idUsuario">ID Usuario</label>
-                            <input type="number" class="form-control" id="idUsuario" placeholder="Ingrese su ID de usuario" required="required">
                         </div>
-    
-                        <div class="col">
-                            <label for="paisUsuario">País</label>
-                            <select class="form-control form-control-sm" id="paisUsuario">
-                                <option hidden disabled selected value>Elegir País</option>
+                
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">flag</i>
+                            <select class="browser-default" id="paisUsuario">
+                                <option hidden disabled selected value="">Elegir País</option>
                                 <option value="Afganistán" id="AF">Afganistán</option>
                                 <option value="Albania" id="AL">Albania</option>
                                 <option value="Alemania" id="DE">Alemania</option>
@@ -281,55 +290,65 @@
                                 <option value="Zambia" id="ZM">Zambia</option>
                                 <option value="Zimbabue" id="ZW">Zimbabue</option>
                             </select>
-    
                         </div>
                     </div>
-    
+
                     <div class="row">
-                        <div class="col">
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">face</i>
+                            <input type="text" id="nombreUsuario" class="validate">
                             <label for="nombreUsuario">Nombre</label>
-                            <input type="text" class="form-control" id="nombreUsuario" placeholder="Ingrese su nombre" required="required">
                         </div>
-    
-                        <div class="col">
+                
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">face</i>
+                            <input type="text" id="apellidoUsuario" class="validate">
                             <label for="apellidoUsuario">Apellido</label>
-                            <input type="text" class="form-control" id="apellidoUsuario" placeholder="Ingrese su apellido" required="required">
                         </div>
                     </div>
-    
-                    <div class="form-group">
-                        <label for="cedulaUsuario">Cédula</label>
-                        <input type="text" class="form-control" id="cedulaUsuario" placeholder="Ingrese su cédula" required="required">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="direccionUsuario">Dirección</label>
-                        <input type="text" class="form-control" id="direccionUsuario" placeholder="Ingrese su dirección" required="required">
-                    </div>
-                    
+                
                     <div class="row">
-                        <div class="col">
-                            <label for="emailUsuario">Email</label>
-                            <input type="email" class="form-control" id="emailUsuario" placeholder="Ingrese su email" required="required">
-                        </div>
-        
-                        <div class="col">
-                            <label for="passwordUsuario">Contraseña</label>
-                            <input type="password" class="form-control" id="passwordUsuario" placeholder="Ingrese su contraseña" required="required">
+                        <div class="input-field hoverable col s12">
+                            <i class="material-icons prefix">book</i>
+                            <input type="text" class="validate" id="cedulaUsuario">
+                            <label for="cedulaUsuario">Cédula</label>
                         </div>
                     </div>
-    
-                    <div class="form-group">
-                        <label for="telefonoUsuario">Teléfono</label>
-                        <input type="text" class="form-control" id="telefonoUsuario" placeholder="Ingrese su teléfono" required="required">
-                    </div>
-    
-                    <br>
+                
+                    <div class="row">
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">directions</i>
+                            <input type="text" class="validate" id="direccionUsuario">
+                            <label for="direccionUsuario">Dirección</label>
+                        </div>
 
-                    <div class="form-row">
-                        <button type="submit" class="btn btn-danger">Enviar</button>
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">call</i>
+                            <input type="text" class="validate" id="telefonoUsuario">
+                            <label for="telefonoUsuario">Teléfono</label>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="row">
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="emailUsuario" class="validate">
+                            <label for="emailUsuario">Email</label>
+                        </div>
+                
+                        <div class="input-field hoverable col s6">
+                            <i class="material-icons prefix">check_circle</i>
+                            <input type="password" id="passwordUsuario" class="validate">
+                            <label for="passwordUsuario">Contraseña</label>
+                        </div>
+                    </div>
+                
+                    <br>
+                
+                    <div class="row">
+                        <button type="submit" class="waves-effect waves-light btn left hoverable"><i class="large material-icons right">done</i>Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
