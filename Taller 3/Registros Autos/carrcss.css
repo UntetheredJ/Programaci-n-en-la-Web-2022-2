@@ -4,7 +4,10 @@ html{
 }
 
 body{
-    background: linear-gradient(45deg, #ccff00, #3F5EFB);
+    background-image: url("https://img5.goodfon.com/wallpaper/nbig/1/e6/muskul-kar-kamaro-risovanie-avto-peredok-muscle-car.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
     font-family: 'Montserrat', sans-serif;
 }
 .box{
@@ -14,6 +17,7 @@ body{
     left: 50%;
     background: rgba(0, 0, 0, .5);
     box-sizing: border-box;
+    backdrop-filter: blur(25px);
     width: 40%;
     height: 90%;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
