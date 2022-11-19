@@ -18,119 +18,114 @@
                     </nav>
                 </div>
                 <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                    <label for="first_name">ID Coche</label>
-                    <input placeholder="Ingrese la ID de su coche" id="id_coche" type="number" class="validate">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Ingrese la ID de su coche" id="id_coche" type="number" class="validate">
+                            <label for="first_name">ID Coche</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select class="browser-default" id="tipoCoche">
+                                <option hidden disabled selected value>Seleccione el tipo de coche</option>
+                                <option>Sedán</option>
+                                <option>Hatchback</option>
+                                <option>SUV</option>
+                                <option>Deportivo</option>
+                                <option>Comercial</option>
+                                <option>Van</option>
+                                <option>Pick Up</option>
+                                <option>Camión</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="input-field col s6">
-                        <label for="tipoCoche">Tipo Coche</label>
-                        <select id="tipoCoche">
-                            <option hidden disabled selected value>Seleccione el tipo de coche</option>
-                            <option>Sedán</option>
-                            <option>Hatchback</option>
-                            <option>SUV</option>
-                            <option>Deportivo</option>
-                            <option>Comercial</option>
-                            <option>Van</option>
-                            <option>Pick Up</option>
-                            <option>Camión</option>
-                        </select>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select class="browser-default" id="estado">
+                                <option hidden disabled selected value>Seleccione el estado</option>
+                                <option>Nuevo</option>
+                                <option>Usado</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <label for="estado">Estado</label>
-                        <select id="estado">
-                            <option hidden disabled selected value>Seleccione el estado</option>
-                            <option>Nuevo</option>
-                            <option>Usado</option>
-                        </select>   
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <label for="marca">Marca</label>
-                        <select id="marca">
-                            <option hidden disabled selected value>Seleccione la marca</option>
-                            <option>Alfa Romeo</option>
-                            <option>Audi</option>
-                            <option>BMW</option>
-                            <option>Citroen</option>
-                            <option>Fiat</option>
-                            <option>Honda</option>
-                            <option>Mercedes Benz</option>
-                            <option>Opel</option>
-                            <option>Renault</option>
-                            <option>Seat</option>
-                            <option>Toyota</option>
-                            <option>Volkswagen</option>
-                            <option>Volvo</option>
-                            <option>Hyundai</option>
-                            <option>Peugeot</option>
-                            <option>Ford</option>
-                        </select>     
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="combustible">Combustible</label>
-                        <select id="combustible">
-                            <option hidden disabled selected value>Seleccione el tipo de combustible</option>
-                            <option>Gasolina</option>
-                            <option>Diésel</option>
-                            <option>Biodiesel</option>
-                            <option>Electricidad</option>
-                            <option>Gas natural</option>   
-                        </select>     
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="id_usuario">ID Usuario</label>
-                        <input placeholder="Ingrese su ID de usuario" id="id_usuario" type="number" class="validate">
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="modelo">Modelo</label>
-                        <input placeholder="Ingrese el modelo de su auto" id="modelo" type="text" class="validate">
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="año">Año</label>
-                        <input placeholder="Ingrese el año de su auto" id="año" type="number" class="validate">
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="detalles">Detalles</label>
-                        <input placeholder="Ingrese detalles de su auto" id="detalles" type="text" class="validate">
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="caja">Caja</label>
-                        <input placeholder="Ingrese la caja de su auto" id="caja" type="number" class="validate">
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="motor">Motor</label>
-                        <input placeholder="Ingrese el motor de su auto" id="motor" type="number" class="validate">
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="precio">Precio</label>
-                        <input placeholder="Ingrese el precio de su auto" id="precio" type="number" min="0" class="validate">
-                    </div>
-                    <div class="input-field col s12">
-                        <label for="moneda">Moneda</label>
-                            <select id="moneda">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select class="browser-default" id="marca">
+                                <option hidden disabled selected value>Seleccione la marca</option>
+                                <option>Alfa Romeo</option>
+                                <option>Audi</option>
+                                <option>BMW</option>
+                                <option>Citroen</option>
+                                <option>Fiat</option>
+                                <option>Honda</option>
+                                <option>Mercedes Benz</option>
+                                <option>Opel</option>
+                                <option>Renault</option>
+                                <option>Seat</option>
+                                <option>Toyota</option>
+                                <option>Volkswagen</option>
+                                <option>Volvo</option>
+                                <option>Hyundai</option>
+                                <option>Peugeot</option>
+                                <option>Ford</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s12">
+                            <select class="browser-default" id="combustible">
+                                <option hidden disabled selected value>Seleccione el tipo de combustible</option>
+                                <option>Gasolina</option>
+                                <option>Diésel</option>
+                                <option>Biodiesel</option>
+                                <option>Electricidad</option>
+                                <option>Gas natural</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="id_usuario">ID Usuario</label>
+                            <input placeholder="Ingrese su ID de usuario" id="id_usuario" type="number" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="modelo">Modelo</label>
+                            <input placeholder="Ingrese el modelo de su auto" id="modelo" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="año">Año</label>
+                            <input placeholder="Ingrese el año de su auto" id="año" type="number" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="detalles">Detalles</label>
+                            <input placeholder="Ingrese detalles de su auto" id="detalles" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="caja">Caja</label>
+                            <input placeholder="Ingrese la caja de su auto" id="caja" type="number" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="motor">Motor</label>
+                            <input placeholder="Ingrese el motor de su auto" id="motor" type="number" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="precio">Precio</label>
+                            <input placeholder="Ingrese el precio de su auto" id="precio" type="number" min="0"
+                                class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <select class="browser-default" id="moneda">
                                 <option hidden disabled selected value>Seleccione su moneda</option>
                                 <option>Dolares</option>
                                 <option>Euros</option>
                                 <option>Pesos</option>
                                 <option>Libras</option>
-                            </select>     
+                            </select>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="date" id="fecha_publicacion" name="fecha_publicacion" class="validate">
+                            <label for="fecha_publicacion">Fecha de publicacion</label>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                            <i class="material-icons right">send</i>
+                        </button>
                     </div>
-                    <div class="input-field col s12">
-                        <label>Fecha de publicacion</label>
-                        <input type="datetime-local" id="fecha_publicacion"
-                        name="fecha_publicacion">
-                    </div>
-                    <button class="btn waves-effect waves-light" type="submit"  name="action">Enviar
-                        <i class="material-icons right">send</i>
-                      </button>
-                </div>
                 </form>
             </div>
-        </div>  
+        </div>
     </body>
   </html>
