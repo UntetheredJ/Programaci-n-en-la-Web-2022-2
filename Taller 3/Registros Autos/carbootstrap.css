@@ -8,9 +8,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html{
     height: 100%;
-    background-color: #1933719c;
+}
+
+body {
+    background-color: #6085dd;
     overflow: scroll;
 }
 
