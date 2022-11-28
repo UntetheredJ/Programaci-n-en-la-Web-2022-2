@@ -4,6 +4,8 @@
         <title class="title">Registro de Usuario</title>
         <link rel="stylesheet" href="usercss.css">
         <script src="userjs.js"></script>
+        <link rel="stylesheet" href="om-javascript-range-slider.css" />
+        <script src="om-javascript-range-slider.js"></script>
     </head>
     <body>
         <div class="todo">
@@ -314,14 +316,50 @@
                     <label>¿Desea ingresar sus gustos?</label>
                 </div>
 
-                <div class="section" id="isGustos">
-                    <div class="error" id="colorErr"></div>
-                    <input type="text" id="inputColor" name="" required="">
-                    <label>Color Favorito</label>
-                </div>
-                
-                <div class="button">
-                    <button type="button" onClick="validarInput()" >Enviar</button>
+                <div class="isGustos" id="isGustos">
+                    <div class="section">
+                        <div class="error" id="colorErr"></div>
+                        <input type="text" id="inputColor" name="" required="">
+                        <label>Color Favorito</label>
+                    </div>
+
+                    <div class="section">
+                        <div class="error" id="marcaCarroErr"></div>
+                        <input type="text" id="inputCarro" name="" required="">
+                        <label>Marca de Carro Favorita</label>
+                    </div>
+
+                    <div class="section">
+                        <div class="error" id="estiloCarroErr"></div>
+                        <select name="pais" id="inputEstiloCarro">
+                            <option value="None">Estilo de Carro Favorito</option>
+                            <option value="Sedan" id="SD">Sedán</option>
+                            <option value="Hatchback" id="HB">Hatchback</option>
+                            <option value="SUV" id="SUV">SUV</option>
+                            <option value="Deportivo" id="DP">Deportivo</option>
+                            <option value="Comercial" id="CM">Comercial</option>
+                            <option value="Van" id="VAN">Van</option>
+                            <option value="Pickup" id="PUP">Pickup</option>
+                            <option value="Camión" id="CAM">Camión</option>
+                        </select>
+                    </div>
+
+                    <div class="section">
+                        <div class="error" id="carroModeloErr"></div>
+                        <input type="text" id="inputModeloCarro" name="" required="">
+                        <label>Modelo de Carro Favorito</label>
+                    </div>
+
+                    <div class="section">
+                        <p class="labelValor">$<output id="cantidadFav"></output>
+                            <input type="range" id="valorCarro" class="valorCarro" min="0" max="120000000" value="0" step="1000000"></p>
+                        </div>
+                        <p class="labelValor">¿Cuánto está dispuesto a pagar por un vehiculo?</p>
+                    </div>
+
+                    <div class="button">
+                        <button type="button" onClick="validarInput()" >Enviar</button>
+                    </div>
                 </div>
             </form>
         </div>
