@@ -116,6 +116,14 @@ html, body{
     transition: 0.2s all;
 }
 
+.isGustos{
+    display: none;
+}
+
+.labelValor{
+    color: #fff;
+}
+
 .button button:active{
     font-size: 18px;
     transition: 0.1s all;
