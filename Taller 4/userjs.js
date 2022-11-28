@@ -1,3 +1,4 @@
+var isGustosOpen = false
 
 /* Función para escribir el error en la sección determinada. */
 function printError(elementId, message){
@@ -135,14 +136,72 @@ function validarInput(){
             printError("vercontrasenaErr", "")
         }
     }
+
+    /* Sí gustos está seleccionado, validar lo siguiente. Sí no, ignorarlo. */
+    if (isGustosOpen == true){
+        var textboxColor = document.getElementById("inputColor")
+        var textboxMarcaCarroFav = document.getElementById("inputCarro")
+        var selectEstiloCarro = document.getElementById("inputEstiloCarro")
+        var textboxModeloCarro = document.getElementById("inputModeloCarro")
+
+        /* Validar el color favorito */
+        if (textboxColor.value == ""){
+            printError("colorErr", "Ingrese un color favorito.")
+        } else {
+            printError("colorErr", "")
+        }
+
+        /* Validar la marca de carro favorita. */
+        if(textboxMarcaCarroFav.value == ""){
+            printError("marcaCarroErr", "Ingrese una marca de carro favorita.")
+        } else {
+            printError("marcaCarroErr", "")
+        }
+
+        /* Validar el estilo de carro favorito. */
+        var selectedEstiloCarro = selectEstiloCarro.options[selectEstiloCarro.selectedIndex].value
+        if (selectedEstiloCarro == "None"){
+            printError("estiloCarroErr", "Seleccione un estilo de carro favorito.")
+        } else {
+            printError("estiloCarroErr", "")
+        }
+
+         /* Validar modelo de carro favorito. */
+         if(textboxModeloCarro.value == ""){
+            printError("carroModeloErr", "Ingrese un modelo de carro favorito.")
+        } else {
+            printError("carroModeloErr", "")
+        }
+    }
 }
 
 function showGustos(){
-    const checkGustos = document.getElementById("isGustos")
+    var inputGustos = document.getElementById("isGustos")
+    var checkboxGustos = document.getElementById("inputGustos")
 
-    if (checkGustos.checked){
-        checkGustos.style.display="block"
+    if (checkboxGustos.checked){
+        inputGustos.style.display="block"
+        isGustosOpen = true
     } else {
-        checkGustos.style.display="none"
+        inputGustos.style.display="none"
+        isGustosOpen = false
+    }
+
+    /* Permite que funcione el Slider control. */
+    sliderControl()
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+};
+
+function sliderControl(){
+    var slider = document.getElementById("valorCarro")
+    var selector = document.getElementById("cantidadFav")
+
+    selector.innerHTML = slider.value
+
+    slider.oninput = function(){
+        selector.innerHTML = numberWithCommas(this.value);
     }
 }
