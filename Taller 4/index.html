@@ -293,13 +293,13 @@
 
                 <div class="section">
                     <div class="error" id="contrasenaErr"></div>
-                    <input type="text" id="inputContrasena" name="" required="">
+                    <input type="password" id="inputContrasena" name="" required="">
                     <label>Contraseña</label>
                 </div>
 
                 <div class="section">
                     <div class="error" id="vercontrasenaErr"></div>
-                    <input type="text" id="inputVerContrasena" name="" required="">
+                    <input type="password" id="inputVerContrasena" name="" required="">
                     <label>Verificar Contraseña</label>
                 </div>
 
@@ -308,9 +308,20 @@
                     <input type="text" id="inputTelefono" name="" required="">
                     <label>Teléfono</label>
                 </div>
+
+                <div class="section">
+                    <input type="checkbox" id="inputGustos" onChange="showGustos()">
+                    <label>¿Desea ingresar sus gustos?</label>
+                </div>
+
+                <div class="section" id="isGustos">
+                    <div class="error" id="colorErr"></div>
+                    <input type="text" id="inputColor" name="" required="">
+                    <label>Color Favorito</label>
+                </div>
                 
                 <div class="button">
-                    <button type="button" onClick="validarLongitud()" >Enviar</button>
+                    <button type="button" onClick="validarInput()" >Enviar</button>
                 </div>
             </form>
         </div>
