@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro de Usuario</title>
+        <link rel="stylesheet" href="registrousuariocss.css">
+        <script src="registrousuariojs.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <div class="form-input">
+            <form class="form">
+                <div class="title">
+                    <h1>Registro de Usuario</h1>
+                </div>
+    
+                <div class="section">
+                    <div class="column">
+                        <label>Nombre</label>
+                        <br>
+                        <input type="text" id="inputNombreUsuario">
+                        <div class="error" id="nombreErr"></div>
+                    </div>
+
+                    <div class="column">
+                        <label>Apellido</label>
+                        <br>
+                        <input type="text" id="inputApellidoUsuario">
+                        <div class="error" id="nombreErr"></div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="section">
+                    <label>Fecha de Nacimiento</label>
+                    <br>
+                    <input type="date" id="inputFechaNacUsuario">
+                    <div class="error" id="fechaNacErr"></div>
+                </div>
+
+                <div class="section">
+                    <label>Email</label>
+                    <br>
+                    <input type="email" id="inputEmailUsuario">
+                    <div class="error" id="emailErr"></div>
+                </div>
+
+                <div class="section">
+                    <div class="column">
+                        <label>Contraseña</label>
+                        <br>
+                        <input type="password" id="inputContrasenaUsuario">
+                        <div class="error" id="contrasenaErr"></div>
+                    </div>
+
+                    <div class="column">
+                        <label>Confirmar Contraseña</label>
+                        <br>
+                        <input type="password" id="inputConfirmContrasenaUsuario">
+                        <div class="error" id="confirmContrasenaErr"></div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label>¿Ha sufrido de enfermedades?</label>
+                    <input type="checkbox" id="checkboxEnfermedades" onChange="showEnfermedades()">
+                </div>
+
+                <div class="sectionEnfermedades" id="sectionEnfermedades">
+                    <label>¿Han sido contagiosas?</label>
+                    <input type="checkbox" id="checkboxContagiosas" onChange="showContagiosas()">
+                    
+                    <div class="sectionContagiosas">
+                        <div class="section">
+                            <label>¿Cuáles enfermedades contagiosas ha sufrido?</label>
+                            <input type="text" id="inputEnfermedadesUsuario">
+                            <div class="error" id="inputEnfermedades"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <button class="btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
