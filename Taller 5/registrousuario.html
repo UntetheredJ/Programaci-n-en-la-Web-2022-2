@@ -6,16 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registro de Usuario</title>
         <link rel="stylesheet" href="registrousuariocss.css">
-        <script src="registrousuariojs.js"></script>
-        <script
-            src="https://code.jquery.com/jquery-3.6.1.js"
-            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-            crossorigin="anonymous">
-        </script>
     </head>
     <body>
-        <div class="form-input">
-            <form class="form">
+        <section class="form-input">
+            <form class="form" id="form">
                 <div class="title">
                     <h1>Registro de Usuario</h1>
                 </div>
@@ -24,31 +18,29 @@
                     <div class="column">
                         <label>Nombre</label>
                         <br>
-                        <input type="text" id="inputNombreUsuario">
+                        <input type="text" id="inputNombreUsuario" required>
                         <div class="error" id="nombreErr"></div>
                     </div>
 
                     <div class="column">
                         <label>Apellido</label>
                         <br>
-                        <input type="text" id="inputApellidoUsuario">
-                        <div class="error" id="nombreErr"></div>
+                        <input type="text" id="inputApellidoUsuario" required>
+                        <div class="error" id="apellidoErr"></div>
                     </div>
                 </div>
-
-                <br><br>
 
                 <div class="section">
                     <label>Fecha de Nacimiento</label>
                     <br>
-                    <input type="date" id="inputFechaNacUsuario">
+                    <input type="date" id="inputFechaNacUsuario" required>
                     <div class="error" id="fechaNacErr"></div>
                 </div>
 
                 <div class="section">
                     <label>Email</label>
                     <br>
-                    <input type="email" id="inputEmailUsuario">
+                    <input type="email" id="inputEmailUsuario" required>
                     <div class="error" id="emailErr"></div>
                 </div>
 
@@ -56,14 +48,14 @@
                     <div class="column">
                         <label>Contraseña</label>
                         <br>
-                        <input type="password" id="inputContrasenaUsuario">
+                        <input type="password" id="inputContrasenaUsuario" required>
                         <div class="error" id="contrasenaErr"></div>
                     </div>
 
                     <div class="column">
                         <label>Confirmar Contraseña</label>
                         <br>
-                        <input type="password" id="inputConfirmContrasenaUsuario">
+                        <input type="password" id="inputConfirmContrasenaUsuario" required>
                         <div class="error" id="confirmContrasenaErr"></div>
                     </div>
                 </div>
@@ -87,9 +79,17 @@
                 </div>
 
                 <div class="section">
-                    <button class="btn">Enviar</button>
+                    <button class="btn" type="submit">Enviar</button>
+                    <button class="btn" type="reset">Borrar</button>
                 </div>
             </form>
-        </div>
+        </section>
+
+        <script type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous">
+        </script>
+        <script src="registrousuariojs.js"></script>
     </body>
 </html>
