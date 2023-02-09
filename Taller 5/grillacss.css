@@ -7,11 +7,9 @@
     align-items: center;
 }
 
-.buttom{
-
-    
+.button{
     position: relative;
-    margin-top: 5%;
+    margin-top: 2%;
 
     border-style: solid;
     border-color: rgb(0, 16, 238);
